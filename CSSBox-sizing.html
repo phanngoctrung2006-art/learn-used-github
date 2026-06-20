@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            background-color: burlywood;
+            height: 100px;
+            width: 100px;
+            color: red;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 10px dashed black;
+            /* content-box background chỉ đổ trong content
+                 padding-box background đổ từ padding trở vào
+                 tương tự đối với border-box */
+            background-clip:content-box;
+            
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        đây là nội dung bài viết
+    </div>
+</body>
+</html>

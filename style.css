@@ -1,0 +1,9 @@
+:root {
+    --my-color: red;
+    --my-size: 40px;
+}
+
+h1 {
+    color: var(--my-color);
+    font-size: var(--my-size);
+}

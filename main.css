@@ -1,0 +1,87 @@
+ #first {
+            color: brown;
+        }
+
+        #first.second {
+            color: pink;
+        }
+
+        /* calc dùng để tính toán như thay vì ghi 170px có thể ghi calc(150px+20px)
+         rgba() màu trong suốt
+         rgb() màu bình thường
+         */
+        .box
+        {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        .box1 {
+            width: calc(10% + 20px);
+            height: 60px;
+            background-color: red;
+            border: 10px solid black;
+        }
+
+        .box2 {
+            width: 60px;
+            height: 60px;
+            background-color: wheat;
+            margin: 10px 20px 30px 50px;
+
+        }
+        .box::before
+        {
+            content:"";
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-color: white;
+        }
+        .box::after
+        {
+            content:"";
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-color: white;
+        }
+        /* h1::first-letter
+        {
+            font-size: 50px;
+        } */
+        .box3 {
+            width: 60px;
+            height: 60px;
+            background-color: pink;
+            padding: 10px 10px 10px
+        }
+        /* h1::first-line
+        {
+            color:red;
+        } */
+        h1::selection
+        {
+            color:red;
+        }
+/* hover dùng để thay đổi khi di chuột vào nhưng nó phải cùng độ ưu tiên
+    active giống như hover nhưng cần phải giữ chuột */
+        /* h1:hover{
+            color:blue;
+        }
+        h2:active
+        {
+            color:blue;
+        } */
+        a::after
+        {
+            content:" (" attr(href) ")";
+        }
+        li:first-child
+        {
+            color:red;
+        }
+        li:last-child
+        {
+            color:brown;
+        }
